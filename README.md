@@ -101,32 +101,6 @@ Response:
 }
 ```
 
-## Project Structure
-
-```
-.
-├── Image_Classification.ipynb    # Model development notebook
-├── server/
-│   ├── server.py                 # Flask API
-│   ├── util.py                   # Classification utilities
-│   ├── wavelet.py                # Wavelet transform functions
-│   └── artifacts/
-│       ├── saved_model.pkl       # Trained SVM model
-│       └── class_dictionary.json # Class label mapping
-├── opencv/
-│   └── haarcascades/
-│       ├── haarcascade_frontalface_default.xml
-│       └── haarcascade_eye.xml
-├── dataset/
-│   ├── cropped/                  # Preprocessed training images
-│   └── [politician_name]/        # Raw images per class
-├── client/
-│   ├── app.html
-│   ├── app.css
-│   └── app.js
-└── README.md
-```
-
 ## Running the Application
 
 ### Server
